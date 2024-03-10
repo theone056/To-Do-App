@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.formContainer{
+    width:30%;
+    margin: 100px auto;
+    padding: 10px;
+    background-color:#1F6E8C;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #0E2954;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form{
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-input{
+    padding: 15px;
+    width: 70%;
+    border: 3px solid #2E8A99;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+    background-color: #1F6E8C;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task-input::placeholder{
+    color: white;
+    opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.task-button{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #84A7A1;
+    color: white;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Task{
+    padding: 5px;
+    background-color: #16616d;
+    margin: 10px 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Task svg{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checked svg{
+    fill: aqua;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.Delete{
+   padding: 0 10px;
+}
+
+.Delete svg{
+    height: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.TaskValue{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
